@@ -1,0 +1,448 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>शुभ विवाह | विवेक ❤️ नेहा</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tiro Devanagari Hindi', serif;
+    background: linear-gradient(135deg, #3b0715, #720e2b, #280510);
+    color: #57200e;
+    padding: 25px 12px;
+    overflow-x: hidden;
+}
+
+.petal {
+    position: fixed;
+    top: -30px;
+    color: #ffd5a5;
+    font-size: 22px;
+    animation: fall linear infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+.card {
+    max-width: 850px;
+    margin: auto;
+    background: #fff8e8;
+    padding: 14px;
+    border: 5px double #bd842c;
+    border-radius: 15px;
+    box-shadow: 0 0 35px #ffca67;
+    position: relative;
+    animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+    from {opacity: 0; transform: translateY(35px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.inner {
+    border: 2px solid #c99a45;
+    padding: 35px 22px;
+    text-align: center;
+    background:
+    radial-gradient(circle at top, #fffdf4, #fff4dc);
+}
+
+.om {
+    font-size: 34px;
+    color: #a51d25;
+}
+
+.top-flower {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+h1 {
+    color: #a51d25;
+    font-size: 37px;
+    margin: 15px 0;
+}
+
+.subtitle {
+    color: #93621b;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+.names {
+    margin: 28px 0;
+    font-size: 36px;
+    color: #8c1424;
+    line-height: 1.8;
+}
+
+.heart {
+    color: #d21e42;
+    font-size: 31px;
+    animation: heartbeat 1.2s infinite;
+    display: inline-block;
+}
+
+@keyframes heartbeat {
+    50% {transform: scale(1.3);}
+}
+
+.divider {
+    color: #bd842c;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.section {
+    margin: 25px 0;
+    padding: 22px 15px;
+    border: 1px solid #d7b36c;
+    border-radius: 12px;
+    background: #fffaf0;
+    line-height: 2;
+}
+
+.section h2 {
+    color: #9c1c2c;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.family {
+    font-size: 19px;
+    line-height: 2.1;
+}
+
+.shayari {
+    background: #fff0d2;
+    border: 2px dashed #c18a36;
+    padding: 25px 12px;
+    border-radius: 12px;
+    color: #8c1424;
+    font-size: 21px;
+    line-height: 2;
+    margin: 25px 0;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.event {
+    padding: 20px 10px;
+    background: linear-gradient(145deg, #fff0cf, #ffe0ad);
+    border: 1px solid #d5a34e;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.event:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px #d6ae6c;
+}
+
+.event .emoji {
+    font-size: 34px;
+}
+
+.event h3 {
+    color: #94172b;
+    margin: 8px 0;
+}
+
+.venue {
+    font-size: 23px;
+    color: #95182a;
+    font-weight: bold;
+}
+
+.special {
+    background: linear-gradient(135deg, #6e1027, #a3293d);
+    color: #fff4d9;
+    border-radius: 15px;
+    padding: 25px 15px;
+    margin-top: 28px;
+    line-height: 2;
+}
+
+.special h2 {
+    color: #ffdb8c;
+}
+
+button {
+    background: linear-gradient(135deg, #b77a22, #f2c76d);
+    color: #4b160b;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 12px 5px;
+    box-shadow: 0 4px 12px #b77a22;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+.hidden-message {
+    display: none;
+    background: #fff1d6;
+    color: #8c1424;
+    border: 2px dashed #bd842c;
+    border-radius: 12px;
+    padding: 22px;
+    margin-top: 18px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.footer {
+    margin-top: 28px;
+    color: #8b4c1b;
+    font-size: 18px;
+    line-height: 2;
+}
+
+@media(max-width: 500px) {
+    .inner {padding: 25px 12px;}
+    h1 {font-size: 29px;}
+    .names {font-size: 29px;}
+    .family {font-size: 17px;}
+    .shayari {font-size: 18px;}
+}
+
+@media print {
+    body {background: white; padding: 0;}
+    .card {box-shadow: none; border: 4px double #bd842c;}
+    button, .petal {display: none !important;}
+    .hidden-message {display: block !important;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<div class="inner">
+
+<div class="om">॥ श्री गणेशाय नमः ॥</div>
+
+<div class="top-flower">🌺 🌼 🪷 🌼 🌺</div>
+
+<h1>शुभ विवाह</h1>
+
+<p class="subtitle">
+ईश्वर की असीम कृपा एवं बड़े-बुजुर्गों के आशीर्वाद से
+<br>
+हमारे परिवार में शुभ विवाह का मंगल अवसर आया है।
+</p>
+
+<div class="divider">❀ ━━━━━ ❀ ━━━━━ ❀</div>
+
+<p class="subtitle">स्नेह एवं प्रेम के साथ</p>
+
+<div class="names">
+विवेक पंवार
+<br>
+<span class="heart">❤️</span>
+<br>
+नेहा शर्मा
+</div>
+
+<p class="subtitle">
+के शुभ परिणय संस्कार में
+<br>
+आप सपरिवार सादर आमंत्रित हैं।
+</p>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<div class="section">
+<h2>💐 वर पक्ष</h2>
+<div class="family">
+चिरंजीव <b>विवेक पंवार</b>
+<br>
+सुपुत्र श्री सुबोध कुमार जी
+<br>
+एवं श्रीमती बबीता देवी जी
+<br>
+निवासी — दोघट
+</div>
+</div>
+
+<div class="section">
+<h2>🌸 वधू पक्ष</h2>
+<div class="family">
+आयुष्मती <b>नेहा शर्मा</b>
+<br>
+सुपुत्री श्री संजय शर्मा जी
+<br>
+एवं श्रीमती अलका शर्मा जी
+<br>
+भ्राता — अक्षय शर्मा
+<br>
+निवासी — बेहटा
+</div>
+</div>
+
+<div class="shayari">
+🌹 <b>दिल से निकली एक छोटी-सी दुआ...</b> 🌹
+<br><br>
+दो दिलों का मिलन हो, खुशियों की बरसात हो,
+<br>
+हर सुबह नई उम्मीद, हर शाम में सौगात हो।
+<br>
+साथ रहे प्यार का, कभी कम न हो विश्वास,
+<br>
+विवेक और नेहा की जोड़ी रहे सदा खास।
+<br><br>
+✨ रब से बस इतनी-सी अरदास... ✨
+</div>
+
+<div class="section">
+<h2>🎉 शुभ मांगलिक कार्यक्रम 🎉</h2>
+
+<div class="events">
+
+<div class="event">
+<div class="emoji">🌼</div>
+<h3>हल्दी समारोह</h3>
+<p><b>19 नवंबर 2026</b></p>
+<p>हल्दी के रंग, खुशियों के संग।</p>
+</div>
+
+<div class="event">
+<div class="emoji">💃</div>
+<h3>संगीत समारोह</h3>
+<p><b>20 नवंबर 2026</b></p>
+<p>गीत, संगीत और नृत्य की शाम।</p>
+</div>
+
+<div class="event">
+<div class="emoji">💍</div>
+<h3>शुभ विवाह</h3>
+<p><b>21 नवंबर 2026</b></p>
+<p>दो दिलों के मिलन का पावन दिन।</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>📍 विवाह स्थल</h2>
+<div class="venue">Mayank Farm House</div>
+<p>आपकी गरिमामयी उपस्थिति हमारे लिए सौभाग्य होगी।</p>
+</div>
+
+<div class="special">
+<h2>❤️ नेहा के लिए एक खास बात ❤️</h2>
+
+<p>
+इस शादी में एक खास मेहमान का भी जिक्र जरूरी है...
+<br>
+<b>लड्डू की प्यारी बुआ — नेहा ❤️</b>
+<br><br>
+आपकी मुस्कान से हर महफिल रोशन हो जाती है।
+आपकी खुशियाँ हमेशा बनी रहें।
+<br><br>
+और हाँ...
+<br>
+<b>विवेक की तरफ से नेहा के लिए ढेर सारा प्यार!</b>
+</p>
+
+<button onclick="showMessage()">💌 एक खास पैगाम खोलें</button>
+
+<div class="hidden-message" id="loveMessage">
+नेहा ❤️
+<br><br>
+तुम्हारे साथ बिताया हर पल मेरे लिए खास है।
+<br>
+मेरी दुआ है कि हमारी जिंदगी का हर दिन
+इस शादी के दिन की तरह खूबसूरत हो।
+<br><br>
+तुम हमेशा मुस्कुराती रहना...
+<br>
+तुम्हारी खुशी ही मेरी सबसे प्यारी खुशी है।
+<br><br>
+<b>ढेर सारा प्यार ❤️</b>
+<br>
+— तुम्हारा विवेक
+</div>
+</div>
+
+<div class="shayari">
+🌺
+<br>
+फूलों-सी महकती रहे आपकी जिंदगी,
+<br>
+खुशियों से सजी रहे हर एक बंदगी।
+<br>
+आइए मिलकर इस शुभ अवसर को यादगार बनाएँ,
+<br>
+अपना आशीर्वाद देकर नवयुगल को खुशहाल बनाएँ।
+<br>
+🌺
+</div>
+
+<div class="footer">
+🙏 सादर आमंत्रण एवं हार्दिक अभिनंदन 🙏
+<br>
+आपकी उपस्थिति ही हमारा सबसे बड़ा उपहार है।
+<br><br>
+<strong>विवेक पंवार एवं नेहा शर्मा के परिवार की ओर से</strong>
+<br>
+🌹 आपका हार्दिक स्वागत है 🌹
+</div>
+
+<button onclick="window.print()">🖨️ शादी का कार्ड प्रिंट करें</button>
+
+</div>
+</div>
+
+<script>
+function showMessage() {
+    const message = document.getElementById("loveMessage");
+    message.style.display = "block";
+    message.scrollIntoView({behavior: "smooth", block: "center"});
+}
+
+// Falling flower animation
+for (let i = 0; i < 18; i++) {
+    let flower = document.createElement("div");
+    flower.className = "petal";
+    flower.innerHTML = ["🌸", "🌺", "✨", "🌼"][Math.floor(Math.random() * 4)];
+    flower.style.left = Math.random() * 100 + "vw";
+    flower.style.animationDuration = (5 + Math.random() * 8) + "s";
+    flower.style.animationDelay = Math.random() * 5 + "s";
+    document.body.appendChild(flower);
+}
+</script>
+
+</body>
+</html>
+```
